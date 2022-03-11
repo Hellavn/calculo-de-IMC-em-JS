@@ -1,10 +1,12 @@
 :root{
     ---cor-fundo:  rgb(60, 126, 126);
+    ---cor-fundo-alt: rgb(238, 245, 252);
+    ---cor-hover: rgb(8, 46, 58);
 }
 
 html{
-    background-color: rgb(209, 227, 243);
-    
+    background-color: var(---cor-fundo);
+    align-content: center;
 }
 
 *{
@@ -13,20 +15,55 @@ html{
 }
 
 #principal{
-    border: 1rem;
-    background-color: var(---cor-fundo);
+    background-color: var(---cor-fundo-alt);
     width: 27rem;
     padding: 1rem;
     border-radius: 1rem;    
     text-align: center;
     margin: auto;
+    margin-top: 7rem;
 }
 
 h1{
     font-size: 2rem;
+    border-bottom: 0rem;
+    margin-block-start: 0rem;
+    margin-block-end: 0rem;
 }
 
 #conteudo{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+}
+
+form input, label, button{
+    width: 100%;
+    margin-left: 0%;
+    background-color: var(---cor-fundo-alt);
+}
+
+form input, label{
+    display: flex;
+    margin-bottom: 0.5rem;    
+}
+
+form button{
+    margin-top: 1rem;
+    display: block;
+    margin-bottom: 1.5px;
+    border-color: var(---cor-fundo-alt);
+}
+
+form button:hover{
+    border-color: var(---cor-hover);
+    background-color: var(---cor-fundo);
+}
+
+form input{
+    outline: 1.7px solid var(---cor-fundo);
+    border: none;
+}
+
+form input:hover{
+    outline: 2px solid var(---cor-hover);
 }
