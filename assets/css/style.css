@@ -1,0 +1,32 @@
+:root{
+    ---cor-fundo:  rgb(60, 126, 126);
+}
+
+html{
+    background-color: rgb(209, 227, 243);
+    
+}
+
+*{
+    font-size: 1.2rem;
+    font-family: 'Segoe UI';
+}
+
+#principal{
+    border: 1rem;
+    background-color: var(---cor-fundo);
+    width: 27rem;
+    padding: 1rem;
+    border-radius: 1rem;    
+    text-align: center;
+    margin: auto;
+}
+
+h1{
+    font-size: 2rem;
+}
+
+#conteudo{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
