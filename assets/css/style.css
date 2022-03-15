@@ -2,6 +2,8 @@
     ---cor-fundo:  rgb(60, 126, 126);
     ---cor-fundo-alt: rgb(238, 245, 252);
     ---cor-hover: rgb(8, 46, 58);
+    ---cor-paragrafo-resultado: rgb(62, 204, 157);
+    ---cor-erro:rgb(218, 96, 15);
 }
 
 html{
@@ -72,4 +74,13 @@ form input{
 
 form input:hover{
     outline: 2px solid var(---cor-hover);
+}
+
+.paragrafo-resultado{
+    background-color: var(---cor-paragrafo-resultado);
+}
+
+.erro{
+    padding: 10px 20px;
+    background-color: var(---cor-erro);
 }
